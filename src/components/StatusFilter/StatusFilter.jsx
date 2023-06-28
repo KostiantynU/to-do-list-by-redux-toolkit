@@ -7,9 +7,7 @@ import { getStatusFilter } from 'redux/selectors';
 
 function StatusFilter() {
   const filter = useSelector(getStatusFilter);
-  console.log(filter);
-  console.log(statusFilters.all);
-  console.log(filter === statusFilters.all);
+
   const dispatch = useDispatch();
 
   const handleFilter = filter => dispatch(setStatusFilter(filter));
