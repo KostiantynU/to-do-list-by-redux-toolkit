@@ -1,9 +1,9 @@
 // import { AllBtn, ActiveBtn, CompletedBtn } from './StatusFilter.styled';
 import { Button } from 'components/Button/Button';
 import { useSelector, useDispatch } from 'react-redux';
-import { setStatusFilter } from 'redux/action';
 import { statusFilters } from 'redux/constants';
 import { getStatusFilter } from 'redux/selectors';
+import { setStatusFilter } from 'redux/filterSlice';
 
 function StatusFilter() {
   const filter = useSelector(getStatusFilter);

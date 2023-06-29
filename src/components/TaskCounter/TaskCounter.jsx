@@ -1,7 +1,10 @@
 import { TaskInformationParagraph } from './TaskCounter.styled';
 import { useSelector } from 'react-redux';
+import { getTasks } from 'redux/selectors';
+
 function TaskCounter() {
-  const tasks = useSelector(state => state.tasks);
+  const tasks = useSelector(getTasks);
+
   const count = tasks.reduce(
     (acc, task) => {
       if (task.checked) {
