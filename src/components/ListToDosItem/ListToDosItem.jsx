@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { ListToDosItemStyled, CheckboxStyled, LabelStyled } from './ListToDosItem.styled';
 import { SubmitBtnStyled } from 'components/FilterForm/FilterForm.styled';
 import { useDispatch } from 'react-redux';
-import { deleteTask, toggleCompleted } from 'redux/action';
+// import { deleteTask, toggleCompleted } from 'redux/action';
+import { deleteTask, toggleCompleted } from 'redux/taskSlice';
 
 function ListToDosItem({ toDo, id, checked }) {
   // const { deleteTask, handleChecked } = useMyContext();
